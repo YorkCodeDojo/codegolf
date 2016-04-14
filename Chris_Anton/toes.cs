@@ -1,0 +1,1 @@
+var c="Head, shoulders, ";var d="knees and toes\n";var w=c+d+d+c+d+d+"and eyes and ears and mouth and nose\n"+c+d+d;var l="Head,shoulders,knees and,toes,and eyes,and ears,and mouth and,nose".Split(',');for(int i=0;;i++){if(i!=0)w=w.Replace(l[i-1],((i&3)==3)?"..., ...":"...");Console.Write(w+"\n\n");}
