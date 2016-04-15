@@ -1,4 +1,3 @@
-l=List.to_tuple(Enum.zip(1..9,["Head, ","shoulders, ","knees and ","toes","and eyes ","and ears ","and mouth and ", "nose","\n"]))
-p=fn(_,9,_)->"";(i,m,f)->IO.puts(List.foldr(i,"",fn({n,s},a)->if n<=m do String.replace(s,~r/(\w)+/,"...")else s end<>a end)<>if m<8,do: "\n",else: "");f.(i,m+1,f);end
-w=for b<-[1,2,3,4,9,3,4,9,1,2,3,4,9,3,4,9,5,6,7,8,9,1,2,3,4,9,3,4], do: elem(l,b-1)
-p.(w,0,p)
+w={"Head, ","shoulders, ","knees and ","toes\n","and eyes ","and ears ","and mouth and ", "nose\n"}
+p=[0,1,2,3,2,3]
+for s<-0..8, do: IO.write(if s>0 do ["\n"] else []end++for m<-p++p++[4,5,6,7]++p do if m<s do String.replace(elem(w,m),~r/(\w)+/,"...")else elem(w,m)end end)
