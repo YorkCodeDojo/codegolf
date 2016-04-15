@@ -1,0 +1,11 @@
+# Ignore everything
+*
+# Except gitignoe
+!.gitignore
+# And things with sensible extensions
+!*.sh
+!*.py
+!*.txt
+!*.md
+# But output.txt is just a temporary generated file
+output.txt
