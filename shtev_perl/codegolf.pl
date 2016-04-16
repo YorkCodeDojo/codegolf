@@ -1,1 +1,1 @@
-@w=split('v',"Headvshouldersvknees xvtoesvx eyesvx earsvx mouth xvnose");for(@w){s/x/and/g};$l='%1$s, %2$s, %3$s %4$s'."\n".'%3$s %4$s';for my $i(0..8){printf($l."\n".$l."\n".'%5$s %6$s %7$s %8$s'."\n".$l."\n".(8>$i?"\n":""),@w);$w[$i]=~s/\w+/.../g;}
+@w=split('v',"Headvshouldersvknees xvtoesvx eyesvx earsvx mouth xvnose");for(@w){s/x/and/g};$l='%1$s, %2$s, %3$s %4$s'."\n".'%3$s %4$s';for my$i(0..8){printf($l."\n".$l."\n".'%5$s %6$s %7$s %8$s'."\n".$l."\n\n",@w);$w[$i]=~s/\w+/.../g;}
