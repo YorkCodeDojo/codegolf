@@ -1,0 +1,1 @@
+fn main(){let mut w=["Head","shoulders","knees and ","toes","and eyes ","and ears ","and mouth ","and nose",""];for i in 0..9{let f=w[0].to_string()+", "+w[1]+", "+w[2]+w[3]+"\n"+w[2]+w[3]+"\n";println!("{}",f.clone()+&f+&w[4..8].join("")+"\n"+&f);w[i]=match i{0|1|3=>"...",_=>"... ... "}}}
