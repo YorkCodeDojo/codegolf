@@ -1,0 +1,1 @@
+"and ears":x;"... ":d;", shoulders, ":s;"Head"s+:h;"knees and toes\n":f;" and mouth and nose":y;"and eyes "x+:z;{h f . h f . z y n h f . n n}:w;w~"..."s+:h;w~"..., ..., ":h;w~d.+"toes\n"+:f;w~d.+"...\n"+:f;w~d.+x+:z;w~4d*:z;w~3d*"nose"+:y;w~4d*:y;w~
